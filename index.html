@@ -5,132 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larsen Ultimate Encyclopedia</title>
 
-    <style>
-
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background:#0D1117;
-            color:white;
-        }
-
-        header{
-            background:#161B22;
-            padding:40px;
-            text-align:center;
-            border-bottom:3px solid #D4AF37;
-        }
-
-        h1{
-            color:#D4AF37;
-            font-size:48px;
-            margin-bottom:10px;
-        }
-
-        h2{
-            font-weight:normal;
-            color:#dddddd;
-        }
-
-        .container{
-            width:90%;
-            max-width:1200px;
-            margin:auto;
-            margin-top:40px;
-        }
-
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
-
-        .card{
-            background:#161B22;
-            padding:30px;
-            border-radius:12px;
-            border:1px solid #333;
-            transition:.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-5px);
-            border-color:#D4AF37;
-        }
-
-        .card h3{
-            color:#D4AF37;
-        }
-
-        footer{
-            text-align:center;
-            margin-top:60px;
-            padding:20px;
-            color:#888;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<nav class="navbar">
+
+    <div class="logo">
+        ♟ Larsen Ultimate Encyclopedia
+    </div>
+
+    <ul>
+
+        <li><a href="#">Accueil</a></li>
+
+        <li><a href="#">Encyclopédie</a></li>
+
+        <li><a href="#">Répertoire</a></li>
+
+        <li><a href="#">Exercices</a></li>
+
+        <li><a href="#">Téléchargements</a></li>
+
+        <li><a href="#">À propos</a></li>
+
+    </ul>
+
+</nav>
+
+<header class="hero">
 
 <h1>Larsen Ultimate Encyclopedia</h1>
 
-<h2>Comprendre. Jouer. Maîtriser.</h2>
-
 <p>
-La plus grande encyclopédie francophone consacrée à l'ouverture Larsen (1.b3).
+
+Comprendre • Jouer • Maîtriser
+
 </p>
+
+<div class="buttons">
+
+<button>📖 Commencer</button>
+
+<button>♟ Explorer le répertoire</button>
+
+</div>
 
 </header>
 
-<div class="container">
+<section class="stats">
 
-<div class="cards">
+<div class="stat">
 
-<div class="card">
-<h3>📖 Commencer</h3>
-<p>Découvrir les bases de l'ouverture Larsen.</p>
+<h2>200+</h2>
+
+<p>Chapitres</p>
+
 </div>
 
+<div class="stat">
+
+<h2>10000+</h2>
+
+<p>Variantes</p>
+
+</div>
+
+<div class="stat">
+
+<h2>3000+</h2>
+
+<p>Exercices</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100%</h2>
+
+<p>Compatible Lichess</p>
+
+</div>
+
+</section>
+
+<section class="cards">
+
 <div class="card">
+
 <h3>📚 Encyclopédie</h3>
-<p>Plus de 200 chapitres de théorie.</p>
+
+<p>La théorie complète de la Larsen.</p>
+
 </div>
 
 <div class="card">
+
 <h3>♟ Répertoire</h3>
-<p>Toutes les variantes principales et secondaires.</p>
+
+<p>Toutes les réponses noires.</p>
+
 </div>
 
 <div class="card">
+
 <h3>🧩 Exercices</h3>
-<p>Des milliers d'exercices tactiques et stratégiques.</p>
+
+<p>Des milliers de positions.</p>
+
 </div>
 
 <div class="card">
-<h3>📥 Téléchargements</h3>
-<p>Télécharger les fichiers PGN compatibles Lichess.</p>
-</div>
 
-<div class="card">
-<h3>ℹ À propos</h3>
-<p>Découvrir le projet Larsen Ultimate Encyclopedia.</p>
-</div>
+<h3>📥 PGN</h3>
+
+<p>Téléchargements compatibles Lichess.</p>
 
 </div>
 
-</div>
+</section>
 
 <footer>
 
-© 2026 Larsen Ultimate Encyclopedia
+Version 0.2 • Larsen Ultimate Encyclopedia
 
 </footer>
 
-</body>
+<script src="js/script.js"></script>
 
+</body>
 </html>
