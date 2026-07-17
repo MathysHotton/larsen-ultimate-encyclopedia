@@ -1,133 +1,512 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Larsen Ultimate Encyclopedia</title>
 
+    <meta name="description"
+        content="La plus grande encyclopédie francophone consacrée à l'ouverture Larsen (1.b3). Théorie, variantes, exercices, parties modèles et PGN.">
+
+    <meta name="keywords"
+        content="Larsen, ouverture Larsen, 1.b3, échecs, chess, lichess, PGN, théorie, encyclopédie">
+
+    <meta name="author" content="Larsen Ultimate Encyclopedia">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-<nav class="navbar">
+<header class="navbar">
 
-    <div class="logo">
-        ♟ Larsen Ultimate Encyclopedia
+    <div class="container">
+
+        <a href="index.html" class="logo">
+
+            <img src="assets/logo.png" alt="Logo Larsen">
+
+            <span>
+                Larsen Ultimate Encyclopedia
+            </span>
+
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li><a class="active" href="index.html">Accueil</a></li>
+
+                <li><a href="pages/encyclopedie.html">Encyclopédie</a></li>
+
+                <li><a href="pages/repertoire.html">Répertoire</a></li>
+
+                <li><a href="pages/exercices.html">Exercices</a></li>
+
+                <li><a href="pages/telechargements.html">Téléchargements</a></li>
+
+                <li><a href="pages/apropos.html">À propos</a></li>
+
+            </ul>
+
+        </nav>
+
     </div>
 
-    <ul>
-
-<li><a href="index.html">Accueil</a></li>
-<li><a href="pages/encyclopedie.html">Encyclopédie</a></li>
-<li><a href="pages/repertoire.html">Répertoire</a></li>
-<li><a href="pages/exercices.html">Exercices</a></li>
-<li><a href="pages/telechargements.html">Téléchargements</a></li>
-<li><a href="pages/apropos.html">À propos</a></li>
-
-    </ul>
-
-</nav>
-
-<header class="hero">
-
-<h1>Larsen Ultimate Encyclopedia</h1>
-
-<p>
-
-Comprendre • Jouer • Maîtriser
-
-</p>
-
-<div class="buttons">
-
-<button>📖 Commencer</button>
-
-<button>♟ Explorer le répertoire</button>
-
-</div>
-
 </header>
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-left">
+
+            <span class="badge">
+                ♟ Version Alpha • Open Source • Gratuit
+            </span>
+
+            <h1>
+                Larsen Ultimate Encyclopedia
+            </h1>
+
+            <h2>
+                La référence francophone de l'ouverture <strong>1.b3</strong>
+            </h2>
+
+            <p>
+
+                Découvrez plus de <strong>200 chapitres</strong>,
+                des milliers de variantes,
+                des exercices interactifs,
+                des parties modèles,
+                des fichiers PGN compatibles Lichess
+                et une explication complète de chaque idée stratégique.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="pages/encyclopedie.html" class="btn btn-primary">
+                    📖 Commencer l'étude
+                </a>
+
+                <a href="pages/repertoire.html" class="btn btn-secondary">
+                    ♟ Explorer le répertoire
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="board-preview">
+
+                <div class="board-header">
+
+                    Échiquier interactif
+
+                </div>
+
+                <div id="future-board">
+
+                    <div class="coming-soon">
+
+                        ♟
+
+                        <h3>Disponible en Version 1.2</h3>
+
+                        <p>
+
+                            Ici sera intégré l'échiquier interactif
+                            permettant de parcourir les variantes,
+                            jouer les coups et analyser les positions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STATISTIQUES -->
+<!-- ========================= -->
 
 <section class="stats">
 
-<div class="stat">
+    <div class="container">
 
-<h2>200+</h2>
+        <div class="stat-card">
 
-<p>Chapitres</p>
+            <div class="stat-icon">📚</div>
 
-</div>
+            <h2>200+</h2>
 
-<div class="stat">
+            <p>Chapitres</p>
 
-<h2>10000+</h2>
+        </div>
 
-<p>Variantes</p>
+        <div class="stat-card">
 
-</div>
+            <div class="stat-icon">♟</div>
 
-<div class="stat">
+            <h2>10000+</h2>
 
-<h2>3000+</h2>
+            <p>Variantes</p>
 
-<p>Exercices</p>
+        </div>
 
-</div>
+        <div class="stat-card">
 
-<div class="stat">
+            <div class="stat-icon">🧩</div>
 
-<h2>100%</h2>
+            <h2>3000+</h2>
 
-<p>Compatible Lichess</p>
+            <p>Exercices</p>
 
-</div>
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon">🌍</div>
+
+            <h2>100%</h2>
+
+            <p>Gratuit</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- VOLUMES -->
+<!-- ========================= -->
+
+<section class="volumes">
+
+    <div class="container">
+
+        <h2>📚 Les volumes de l'encyclopédie</h2>
+
+        <p>
+            L'encyclopédie est organisée en plusieurs volumes afin de faciliter
+            l'apprentissage progressif de l'ouverture Larsen.
+        </p>
+
+        <div class="volume-grid">
+
+            <div class="volume-card">
+
+                <span>📘</span>
+
+                <h3>Volume 0</h3>
+
+                <p>Introduction et méthode.</p>
+
+            </div>
+
+            <div class="volume-card">
+
+                <span>📗</span>
+
+                <h3>Volume 1</h3>
+
+                <p>Comprendre la Larsen.</p>
+
+            </div>
+
+            <div class="volume-card">
+
+                <span>📙</span>
+
+                <h3>Volume 2</h3>
+
+                <p>Répertoire contre 1...e5.</p>
+
+            </div>
+
+            <div class="volume-card">
+
+                <span>📕</span>
+
+                <h3>Volume 3</h3>
+
+                <p>Répertoire contre 1...d5.</p>
+
+            </div>
+
+            <div class="volume-card">
+
+                <span>📓</span>
+
+                <h3>Volume 4</h3>
+
+                <p>Répertoire contre 1...Cf6.</p>
+
+            </div>
+
+            <div class="volume-card">
+
+                <span>📔</span>
+
+                <h3>Volumes suivants...</h3>
+
+                <p>c5, g6, e6, d6, f5, réponses rares et bien plus.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- POURQUOI CHOISIR LA LARSEN -->
+<!-- ========================= -->
+
+<section class="features">
+
+    <div class="container">
+
+        <h2>Pourquoi choisir la Larsen Ultimate Encyclopedia ?</h2>
+
+        <p class="section-description">
+            Plus qu'un simple répertoire d'ouverture, cette plateforme a été pensée
+            pour accompagner les joueurs du niveau débutant jusqu'au niveau expert.
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3>Explications complètes</h3>
+                <p>
+                    Chaque variante est expliquée avec ses idées stratégiques,
+                    ses plans et ses pièges.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">♟</div>
+                <h3>Échiquier interactif</h3>
+                <p>
+                    Parcourez toutes les variantes directement sur un échiquier
+                    interactif (Version 1.2).
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🧩</div>
+                <h3>Exercices</h3>
+                <p>
+                    Entraînez-vous grâce à des milliers d'exercices tactiques
+                    et stratégiques.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📥</div>
+                <h3>Téléchargements PGN</h3>
+                <p>
+                    Téléchargez tous les chapitres au format PGN compatible
+                    avec Lichess, ChessBase et SCID.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="cards">
+<!-- ========================= -->
+<!-- ROADMAP -->
+<!-- ========================= -->
 
-<div class="card">
+<section class="roadmap">
 
-<h3>📚 Encyclopédie</h3>
+    <div class="container">
 
-<p>La théorie complète de la Larsen.</p>
+        <h2>🚀 Roadmap du projet</h2>
 
-</div>
+        <div class="timeline">
 
-<div class="card">
+            <div class="timeline-item completed">
+                <span>✅</span>
+                <div>
+                    <h3>Version 1.1</h3>
+                    <p>Nouvelle interface et architecture.</p>
+                </div>
+            </div>
 
-<h3>♟ Répertoire</h3>
+            <div class="timeline-item">
+                <span>♟</span>
+                <div>
+                    <h3>Version 1.2</h3>
+                    <p>Échiquier interactif.</p>
+                </div>
+            </div>
 
-<p>Toutes les réponses noires.</p>
+            <div class="timeline-item">
+                <span>📖</span>
+                <div>
+                    <h3>Version 1.3</h3>
+                    <p>Lecteur PGN intégré.</p>
+                </div>
+            </div>
 
-</div>
+            <div class="timeline-item">
+                <span>🔍</span>
+                <div>
+                    <h3>Version 1.4</h3>
+                    <p>Moteur de recherche avancé.</p>
+                </div>
+            </div>
 
-<div class="card">
+            <div class="timeline-item">
+                <span>🌍</span>
+                <div>
+                    <h3>Version 2.0</h3>
+                    <p>Première version publique complète.</p>
+                </div>
+            </div>
 
-<h3>🧩 Exercices</h3>
+        </div>
 
-<p>Des milliers de positions.</p>
-
-</div>
-
-<div class="card">
-
-<h3>📥 PGN</h3>
-
-<p>Téléchargements compatibles Lichess.</p>
-
-</div>
+    </div>
 
 </section>
+<!-- ========================= -->
+<!-- APPEL À L'ACTION -->
+<!-- ========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Prêt à maîtriser l'ouverture Larsen ?</h2>
+
+        <p>
+
+            Rejoignez la plus grande encyclopédie francophone consacrée à
+            l'ouverture 1.b3 et améliorez votre compréhension grâce à une
+            méthode progressive.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="pages/encyclopedie.html" class="btn btn-primary">
+                📚 Commencer maintenant
+            </a>
+
+            <a href="pages/repertoire.html" class="btn btn-secondary">
+                ♟ Voir le répertoire
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
 
 <footer>
 
-Version 0.2 • Larsen Ultimate Encyclopedia
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>♟ Larsen Ultimate Encyclopedia</h3>
+
+            <p>
+
+                La plus grande encyclopédie gratuite consacrée à
+                l'ouverture Larsen (1.b3).
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>Navigation</h4>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/encyclopedie.html">Encyclopédie</a></li>
+                <li><a href="pages/repertoire.html">Répertoire</a></li>
+                <li><a href="pages/exercices.html">Exercices</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>Projet</h4>
+
+            <ul>
+
+                <li>Open Source</li>
+                <li>Compatible Lichess</li>
+                <li>Compatible ChessBase</li>
+                <li>Compatible SCID</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>Version</h4>
+
+            <p>
+
+                Version 1.1.0 Alpha
+
+            </p>
+
+            <p>
+
+                © 2026 Larsen Ultimate Encyclopedia
+
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/app.js"></script>
 
 </body>
-</html>
+
+</html> 
