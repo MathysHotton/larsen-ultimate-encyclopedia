@@ -1,0 +1,68 @@
+/* ======================================
+   BOARD
+====================================== */
+
+.board-area{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+#board{
+
+    width:min(580px,68vh);
+
+    height:min(580px,68vh);
+
+    border:3px solid var(--gold);
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    background:#111827;
+
+}
+
+.controls{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.controls button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:var(--gold);
+
+    color:black;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.controls button:hover{
+
+    transform:translateY(-2px);
+
+}
+

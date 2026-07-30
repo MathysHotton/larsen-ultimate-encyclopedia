@@ -1,0 +1,101 @@
+/* ======================================
+   ARBRE DES VARIANTES
+====================================== */
+
+.left-panel h2{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+#tree{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.tree-node{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.tree-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:12px 16px;
+
+    background:var(--panel2);
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.2s;
+
+}
+
+.tree-header:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+.tree-children{
+
+    display:none;
+
+    margin-top:8px;
+
+    margin-left:15px;
+
+    gap:6px;
+
+}
+
+.variation{
+
+    width:100%;
+
+    border:none;
+
+    background:#2A3443;
+
+    color:white;
+
+    padding:10px 14px;
+
+    text-align:left;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.variation:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}

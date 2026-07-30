@@ -1,6 +1,19 @@
 {
+  "name": "larsen-ultimate-encyclopedia",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "chess.js": "^1.4.0",
-    "chessground": "^9.2.1"
+    "chessground": "^9.2.1",
+    "marked": "^18.0.7"
+  },
+  "devDependencies": {
+    "vite": "^7.3.6"
   }
 }

@@ -1,0 +1,28 @@
+[
+    {
+        "name": "1...e5",
+        "children": [
+            {
+                "name": "Classique",
+                "pgn": "/data/pgn/e5_classique.pgn"
+            },
+            {
+                "name": "Moderne",
+                "pgn": "/data/pgn/e5_moderne.pgn"
+            }
+        ]
+    },
+    {
+        "name": "1...Nf6",
+        "children": [
+            {
+                "name": "Classique",
+                "pgn": "/data/pgn/nf6_classique.pgn"
+            }
+        ]
+    },
+    {
+        "name": "1...d5",
+        "children": []
+    }
+]
