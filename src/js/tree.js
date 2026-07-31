@@ -97,7 +97,7 @@ async function initTree() {
 
                 window.location.href =
 
-                    "/src/pages/explorer.html";
+                    "./explorer.html";
 
             };
 

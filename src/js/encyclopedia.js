@@ -10,7 +10,9 @@ let chapters = [];
 
 async function loadMenu(){
 
-    const response = await fetch("/src/data/chapters.json");
+    const response = await fetch(
+    `${import.meta.env.BASE_URL}data/chapters.json`
+);  
 
     chapters = await response.json();
 
@@ -133,9 +135,11 @@ async function init(){
 
     await loadMenu();
 
-await loadMenu();
-
 installSearch();
+
+if (chapters.length) {
+    await openChapter(chapters[0].file);
+}
 
 if(chapters.length){
 
@@ -238,102 +242,5 @@ function updateNavigation(){
         openChapter(chapters[currentChapter + 1].file);
 
     };
-
-}
-
-function updateChapterNavigation() {
-
-    const previousButton =
-        document.getElementById("previous-chapter");
-
-    const nextButton =
-        document.getElementById("next-chapter");
-
-    previousButton.disabled = currentIndex === 0;
-
-    nextButton.disabled =
-        currentIndex === chapters.length - 1;
-
-    if (currentIndex > 0) {
-
-        const previous = chapters[currentIndex - 1];
-
-        previousButton.innerHTML =
-            `◀ ${previous.id} ${previous.title}`;
-
-        previousButton.onclick = () => {
-
-            openChapter(previous.file);
-
-            document
-
-    .querySelector(".chapter-content")
-
-    .scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
-        };
-
-    } else {
-
-        previousButton.innerHTML =
-            "◀ Premier chapitre";
-
-    }
-
-    if (currentIndex < chapters.length - 1) {
-
-        const next = chapters[currentIndex + 1];
-
-        nextButton.innerHTML =
-            `${next.id} ${next.title} ▶`;
-
-        nextButton.onclick = () => {
-
-            openChapter(next.file);
-
-        };
-
-    } else {
-
-        nextButton.innerHTML =
-            "Dernier chapitre ▶";
-
-    }
-
-}
-
-updateChapterNavigation();
-
-updateSelectedChapter();
-
-function updateSelectedChapter() {
-
-    document
-
-        .querySelectorAll(".chapter-button")
-
-        .forEach(button => {
-
-            button.classList.remove("active");
-
-        });
-
-    const buttons =
-
-        document.querySelectorAll(".chapter-button");
-
-    if (buttons[currentIndex]) {
-
-        buttons[currentIndex]
-
-            .classList.add("active");
-
-    }
 
 }

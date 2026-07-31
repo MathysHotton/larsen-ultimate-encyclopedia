@@ -11,8 +11,11 @@ let games = [];
 export async function initDatabase() {
 
     if (games.length) return;
+    
+    const response = await fetch(
+    `${import.meta.env.BASE_URL}pgn/larsen.pgn`
+);
 
-    const response = await fetch("/pgn/larsen.pgn");
 
     if (!response.ok) {
 
