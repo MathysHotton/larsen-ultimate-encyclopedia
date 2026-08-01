@@ -137,10 +137,6 @@ async function init(){
 
 installSearch();
 
-if (chapters.length) {
-    await openChapter(chapters[0].file);
-}
-
 if(chapters.length){
 
     await openChapter(chapters[0].file);

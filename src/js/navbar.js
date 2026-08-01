@@ -1,3 +1,5 @@
+import "../css/app.css";
+
 const nav = `
 <header class="navbar">
 
